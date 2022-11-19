@@ -30,6 +30,6 @@ p {
   font-size: 1.25em;
 }
 
-span {
+span.highlight {
   color: yellow;
 }
