@@ -5,10 +5,21 @@ a {
   text-decoration-thickness: 1px;
 }
 
+button {
+  font-family: 'Noto Sans Mono', monospace;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 body {
   background-color: #0a0f1e;
   color: white;
   font-family: 'Noto Sans Mono', monospace;
+}
+
+footer {
+  position: fixed;
+  bottom: 1em;
 }
 
 li {
