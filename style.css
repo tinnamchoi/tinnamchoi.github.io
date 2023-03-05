@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;300;400&display=swap');
 
 /* Remove default margin and padding */
 html,
@@ -24,6 +24,7 @@ a {
   color: white;
   text-decoration: none;
   text-shadow: 0px 0px 16px white;
+  font-weight: 300;
 }
 
 /* Center everything */
@@ -98,7 +99,8 @@ div.page:nth-child(even) {
 }
 
 /* Style project title */
-span.project_title {
+span.project_title, 
+span.project_title a {
   font-size: 32px;
   font-weight: 400;
 }
