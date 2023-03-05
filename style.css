@@ -33,10 +33,14 @@ div.page {
   height: 100vh;
 }
 
-div.header {
+div.header, 
+div.feeter {
   height: 20vh;
-  font-size: 64px;
   text-align: center;
+}
+
+div.header {
+  font-size: 64px;
 }
 
 div.bodyer {
@@ -47,13 +51,22 @@ div.bodyer {
 }
 
 div.feeter {
-  height: 20vh;
   font-size: 32px;
-  text-align: center;
 }
 
 .to_page {
   text-align: center;
   font-size: 96px;
   padding: 64px;
+}
+
+.contact_link {
+  text-align: center;
+  font-size: 64px;
+  padding: 32px;
+}
+
+#about, 
+#contact {
+  background-color: #141f3d;
 }
