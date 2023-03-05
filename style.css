@@ -1,48 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap");
 
+/* Remove default margin and padding */
 html,
 body {
   margin: 0px;
 }
 
+/* Smooth scroll on click*/
 html {
   scroll-behavior: smooth;
 }
 
+/* Basic attributes */
 body {
   background-color: #0a0f1e;
   color: white;
   font-family: 'Noto Sans Mono', monospace;
 }
 
+/* Hyperlink attributes */
 a {
   color: white;
   text-decoration: none;
   text-shadow: 0px 0px 16px white;
 }
 
+/* Center everything */
 div.header,
-div.bodyer,
-div.feeter {
+div.feeter,
+div.bodyer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
-div.page {
-  height: 100vh;
-}
-
-div.header, 
+/* Header and feeter height */
+div.header,
 div.feeter {
   height: 20vh;
-  text-align: center;
 }
 
+/* Header font size */
 div.header {
   font-size: 64px;
 }
 
+/* Bodyer padding, font size, and height */
 div.bodyer {
   padding: 0px 64px;
   font-size: 20px;
@@ -50,27 +53,27 @@ div.bodyer {
   text-align: justify;
 }
 
+/* Feeter font size */
 div.feeter {
   font-size: 32px;
 }
 
-.to_page {
-  text-align: center;
+/* Home page bodyer font size */
+#home .bodyer {
   font-size: 96px;
-  padding: 64px;
 }
 
-.contact_link {
-  text-align: center;
+/* Contact page bodyer font size */
+#contact .bodyer {
   font-size: 64px;
-  padding: 32px;
 }
 
-#about, 
-#contact {
+/* Change background color of even pages */
+div.page:nth-child(even) {
   background-color: #141f3d;
 }
 
+/* Style the top button */
 #top_button {
   display: none;
   position: fixed;
@@ -84,5 +87,11 @@ div.feeter {
   border-radius: 4px;
   background-color: lightgray;
   font-family: 'Noto Sans Mono', monospace;
+  font-weight: 900;
+}
+
+/* Style project title */
+span.project_title {
+  font-size: 32px;
   font-weight: 900;
 }
