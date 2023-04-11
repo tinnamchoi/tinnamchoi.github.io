@@ -27,11 +27,10 @@ svg path {
 }
 
 .letter:hover path#m_0 {
-  d: path("M 400 0 h 600 v 500 h -120 l -120 0 m 120 0 h -120 m 120 0 l -120 0 h -120 l -120 0 m 120 0 h -120 m 120 0 l -120 0 h -120 v -500");
+  d: path("M 400 0 h 600 v 500 h -120 l -40 0 h -40 l -40 0 h -120 l -40 0 h -40 l -40 0 h -120 v -500");
 }
 
 .letter:hover path#t_1 {
-  stroke-width: 8px;
   d: path("M 1125 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
 }
 
