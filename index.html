@@ -8,105 +8,36 @@
 </head>
 
 <body>
-  <a href="#home"><button id="top_button">/</button></a>
-  <script src="script.js"></script>
-
-  <div class="page" id="home">
-    <div class="header">
-      Timothy Choi
-    </div>
-    <div class="bodyer">
-      <div class="text">
-        <a href="#about">ABOUT</a>&nbsp;
-        <a href="#projects">PROJECTS</a>&nbsp;
-        <a href="#contact">CONTACT</a>
-      </div>
-    </div>
-    <div class="feeter">
-      <a href="https://github.com/tinnamchoi/tinnamchoi.github.io">./src/</a>
-    </div>
-  </div>
-
-  <div class="page" id="about">
-    <div class="header">
-      About
-    </div>
-    <div class="bodyer">
-      <div class="text">
-        I have always been interested in computers, and with it being my favourite subject in highschool, choosing it to
-        be my degree in university was a no-brainer.
-        <br /><br />
-        Before I went to university, I had experience as a system engineer, where I spearheaded the automation and
-        parallelization of our tasks, which included the migration of local to AD accounts and modification of the
-        registry. Despite it being a relatively short working experience, I still learned a lot in terms of leadership
-        as I took the position of a mentor for new employees.
-        <br /><br />
-        I am now a committee member of our Computer Science Club at The University of Adelaide, where we often host
-        events such as workshops and CTFs for our fellow students. Besides hosting them, I also participate in other
-        international CTFs with our University team AdelaideB9.
-        <br /><br />
-        I was very fortunate to meet a bunch of great people in the various student clubs of my university, including
-        Ravi Hammond, Jason Beh, and Nathan Shepherd. With their mentorship, my algorithm designing and C++ skills are
-        now better than ever, and I am confident that I am capable of taking up the job of a software engineer.
-        <br /><br />
-        I am currently looking for a penultimate year internship, and I would love to have a referral. Please check out
-        my resume:
-      </div>
-    </div>
-    <div class="feeter">
-      <a href="https://github.com/tinnamchoi/resumes/blob/master/resume.pdf">~/resume.pdf</a>
-    </div>
-  </div>
-
-  <div class="page" id="projects">
-    <div class="header">
-      Projects
-    </div>
-    <div class="bodyer">
-      <div class="text">
-        <span class="project_title"><a href="https://devpost.com/software/mbti-music">The Sound of Personality</a>
-          (UNIHACK 2023)</span><br>
-        This is my first hackathon, and also my first time using APIs. Our team was a bit disorganized at first as we
-        had no prior experience with hackathons, but we managed make a web app to analyze a person's Spotify listening
-        history and estimate their Myers-Briggs personality type using data from <a
-          href="https://www.16personalities.com/articles/music-preferences-by-personality-type">16personalities</a> and
-        Spotify.
-        <br><br>
-        <span class="project_title"><a href="https://tinnamchoi.github.io/negative-base-converter/">Negative Base
-            Converter</a> (ALPHA)</span><br>
-        This is a web app that converts numbers from any base to any other base, including negative bases, which have
-        the unique property of being able to represent all positive and negative integers without using a negative sign.
-        As this topic is not very popular, I had to do a lot of research in order to discover an algorithm that can deal
-        with the conversion properly especially when it comes to fractional numbers.
-        <br><br>
-        <span class="project_title"><a href="https://allrgb.com/">allRGB</a></span><br>
-        This is part of a bigger project started by "deidee", which has the objective to create images with one pixel
-        for every RGB color, without any duplicate or missing colors. I aimed to create a Python program that would take
-        any image and convert it into an allRGB image. As this was my first programming project ever, my program used
-        the brute-force solution, and although functional, it was quite inefficient. Now that I am more familiar with
-        algorithm design and data structures, I plan to rewrite the program to make it more efficient.
-      </div>
-    </div>
-    <div class="feeter">
-      <a href="/projects.html">more projects...</a>
-    </div>
-  </div>
-
-  <div class="page" id="contact">
-    <div class="header">
-      Contact
-    </div>
-    <div class="bodyer">
-      <div class="text">
-        <a href="mailto:tinnam.choi@gmail.com">E-mail</a>&nbsp;
-        <a href="https://github.com/tinnamchoi">GitHub</a>&nbsp;
-        <a href="https://www.linkedin.com/in/tinnamchoi/">LinkedIn</a>
-      </div>
-    </div>
-    <div class="feeter">
-      &copy 2023 Timothy Choi
-    </div>
-  </div>
+  <svg viewBox="0 0 0 0" class="def">
+    <defs>
+      <filter id="glow">
+        <fegaussianblur class="blur" result="coloredBlur" stddeviation="2"></fegaussianblur>
+        <femerge>
+          <femergenode in="coloredBlur"></femergenode>
+          <femergenode in="coloredBlur"></femergenode>
+          <femergenode in="coloredBlur"></femergenode>
+          <femergenode in="SourceGraphic"></femergenode>
+        </femerge>
+      </filter>
+    </defs>
+  </svg>
+  <svg viewBox="-16 -16 1200 532" class="bruh">
+    <g class="letter">
+      <path
+        d="M 150 50 h 100 m 0 0 v 100 m 0 0 h 100 m 0 0 v 100 l -100 0 m 0 0 v 100 m 0 0 l 100 0 v 100 h -200 m 0 0 v -200 m 0 0 h -100 m 0 0 v -100 m 0 0 h 100 m 0 0 v -100"
+        id="t_0" />
+    </g>
+    <g class="letter">
+      <path
+        d="M 525 50 h 100 m 0 0 v 100 m 0 0 h 100 m 0 0 v 100 l -100 0 m 0 0 v 100 m 0 0 l 100 0 v 100 h -200 m 0 0 v -200 m 0 0 h -100 m 0 0 v -100 m 0 0 h 100 m 0 0 v -100"
+        id="m_0" />
+    </g>
+    <g class="letter">
+      <path
+        d="M 900 50 h 100 m 0 0 v 100 m 0 0 h 100 m 0 0 v 100 l -100 0 m 0 0 v 100 m 0 0 l 100 0 v 100 h -200 m 0 0 v -200 m 0 0 h -100 m 0 0 v -100 m 0 0 h 100 m 0 0 v -100"
+        id="t_1" />
+    </g>
+  </svg>
 </body>
 
 </html>
