@@ -3,15 +3,15 @@ svg.def {
   max-height: 0;
 }
 
-svg.bruh {
-  width: 80vw;
-  max-height: 60vh;
+svg.word {
+  width: 90vw;
+  max-height: 80vh;
 }
 
 svg path {
   fill: none;
   stroke: white;
-  transition: 1s;
+  transition: 0.8s;
   stroke-width: 8px;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -23,18 +23,16 @@ svg path {
 }
 
 .letter:hover path#t_0 {
-  stroke-width: 8px;
   d: path("M 125 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
 }
 
 .letter:hover path#m_0 {
-  stroke-width: 8px;
-  d: path("M 500 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
+  d: path("M 400 0 h 600 v 500 h -120 l -120 0 m 120 0 h -120 m 120 0 l -120 0 h -120 l -120 0 m 120 0 h -120 m 120 0 l -120 0 h -120 v -500");
 }
 
 .letter:hover path#t_1 {
   stroke-width: 8px;
-  d: path("M 875 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
+  d: path("M 1125 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
 }
 
 
@@ -46,4 +44,9 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+}
+
+rect {
+  stroke: red;
+  fill: none;
 }
