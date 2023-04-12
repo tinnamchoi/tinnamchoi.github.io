@@ -1,28 +1,4 @@
-svg path {
-  fill: none;
-  stroke: white;
-  transition: 0.8s;
-  stroke-width: 8px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.letter {
-  pointer-events: bounding-box;
-}
-
-.letter:hover path#t_0 {
-  d: path("M 125 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
-}
-
-.letter:hover path#m_0 {
-  d: path("M 400 0 h 600 v 500 h -66 l -67 0 h -67 l -67 0 h -66 l -67 0 h -67 l -67 0 h -66 v -500");
-}
-
-.letter:hover path#t_1 {
-  d: path("M 1125 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 
 body {
   background-color: #0a0f1e;
@@ -32,9 +8,68 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  color: white;
+  font-family: 'Rubik', sans-serif;
 }
 
-rect {
-  stroke: red;
+svg path {
   fill: none;
+  stroke: white;
+  transition: 0.8s;
+  stroke-width: 8px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+foreignObject {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.8s ease-in;
+}
+
+h2 {
+  font-size: 5vh;
+  font-weight: 200;
+}
+
+p {
+  font-size: 2vh;
+  text-align: justify;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-shadow: white 0 0 4px;
+}
+
+foreignObject.title {
+  font-size: 5vh;
+}
+
+text.content {
+  font-size: 2vh;
+  width: 300px;
+}
+
+.letter {
+  pointer-events: bounding-box;
+}
+
+.letter:hover path.t_0 {
+  d: path("M 125 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
+}
+
+.letter:hover path.m_0 {
+  d: path("M 400 0 h 600 v 500 h -66 l -67 0 h -67 l -67 0 h -66 l -67 0 h -67 l -67 0 h -66 v -500");
+}
+
+.letter:hover path#t_1 {
+  d: path("M 1125 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
+}
+
+.letter:hover foreignObject.t_0,
+.letter:hover foreignObject.m_0 {
+  visibility: visible;
+  opacity: 1;
 }
