@@ -1,15 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
-
 body {
   background-color: #0a0f1e;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
-  color: white;
-  font-family: 'Rubik', sans-serif;
 }
 
 svg path {
@@ -21,37 +18,6 @@ svg path {
   stroke-linejoin: round;
 }
 
-foreignObject {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.8s ease-in;
-}
-
-h2 {
-  font-size: 5vh;
-  font-weight: 200;
-}
-
-p {
-  font-size: 2vh;
-  text-align: justify;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  text-shadow: white 0 0 4px;
-}
-
-foreignObject.title {
-  font-size: 5vh;
-}
-
-text.content {
-  font-size: 2vh;
-  width: 300px;
-}
-
 .letter {
   pointer-events: bounding-box;
 }
@@ -60,16 +26,47 @@ text.content {
   d: path("M 125 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
 }
 
+.letter:hover path.i_0 {
+  d: path("M 400 0 h 200 v 125 m -200 125 l 0 -125 v -125 m 200 125 l 0 125 v 250 h -200 v -250");
+}
+
 .letter:hover path.m_0 {
-  d: path("M 400 0 h 600 v 500 h -66 l -67 0 h -67 l -67 0 h -66 l -67 0 h -67 l -67 0 h -66 v -500");
+  d: path("M 600 100 h 600 v 400 h -66 l -67 0 h -67 l -67 0 h -66 l -67 0 h -67 l -67 0 h -66 v -400");
 }
 
-.letter:hover path#t_1 {
-  d: path("M 1125 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
+.letter:hover path.o_0 {
+  d: path("M 1200 100 h 400 v 400 h -400 v -400 m 400 0 l 0 400 l -400 0 l 0 -400 l 400 0");
 }
 
-.letter:hover foreignObject.t_0,
-.letter:hover foreignObject.m_0 {
-  visibility: visible;
-  opacity: 1;
+.letter:hover path.t_1 {
+  d: path("M 1725 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
+}
+
+.letter:hover path.h_0 {
+  d: path("M 2000 0 h 125 m 275 0 v 125 m -275 -125 h 275 m 0 125 v 375 h -125 l -150 0 m 150 0 h -150 m 150 0 l -150 0 h -125 v -500");
+}
+
+.letter:hover path.y_0 {
+  d: path("M 2400 100 h 80 l 80 0 h 80 l 80 0 h 80 v 500 h -400 v -100 l 0 -100 v -100 l 0 -100 v -100");
+}
+
+.letter:hover path.c_0 {
+  d: path("M 900 600 h 400 v 80 l 0 80 v 80 l 0 80 v 80 h -400 v -400");
+}
+
+.letter:hover path.h_1 {
+  d: path("M 1300 500 h 125 m 275 0 v 125 m -275 -125 h 275 m 0 125 v 375 h -125 l -150 0 m 150 0 h -150 m 150 0 l -150 0 h -125 v -500");
+}
+
+.letter:hover path.o_1 {
+  d: path("M 1700 600 h 400 v 400 h -400 v -400 m 400 0 l 0 400 l -400 0 l 0 -400 l 400 0");
+}
+
+.letter:hover path.i_1 {
+  d: path("M 2100 500 h 200 v 125 m -200 125 l 0 -125 v -125 m 200 125 l 0 125 v 250 h -200 v -250");
+}
+
+rect {
+  fill: none;
+  stroke: red;
 }
