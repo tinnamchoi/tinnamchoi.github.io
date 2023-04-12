@@ -43,6 +43,15 @@ a {
   text-shadow: white 0 0 4px;
 }
 
+address {
+  font-size: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+}
+
 foreignObject.title {
   font-size: 5vh;
 }
