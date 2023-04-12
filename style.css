@@ -22,16 +22,8 @@ svg path {
   pointer-events: bounding-box;
 }
 
-.letter:hover path.t_0 {
-  d: path("M 125 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
-}
-
-.letter:hover path.i_0 {
-  d: path("M 400 0 h 200 v 125 m -200 125 l 0 -125 v -125 m 200 125 l 0 125 v 250 h -200 v -250");
-}
-
-.letter:hover path.m_0 {
-  d: path("M 600 100 h 600 v 400 h -66 l -67 0 h -67 l -67 0 h -66 l -67 0 h -67 l -67 0 h -66 v -400");
+.letter:hover path.tim_0 {
+  d: path("M 0 0 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 m -109 0 h 109 m 0 0 l 109 0 h 110 m -109 0 h 109 m 0 0 l 109 0 m 0 0 h 545 M 1200 0 m 0 0 v 125 m 0 0 v 375 m 0 -375 v 125 m 0 0 v 250 m 0 -250 v 250 m 0 -250 v 125 m 0 0 v 125 M 0 500 m 0 0 h 109 m 0 0 h 218 m -109 0 h 109 m 0 0 l 109 0 h 110 m -110 0 h 110 m 0 0 l 109 0 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 M 0 0 m 0 0 v 125 m 0 0 v 125 m 0 -125 v 375 m 0 -250 v 250 m 0 -250 v 250 m 0 -250 v 250");
 }
 
 .letter:hover path.o_0 {
