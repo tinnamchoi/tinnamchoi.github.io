@@ -11,6 +11,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Rubik', sans-serif;
+  font-size: 32px;
+}
+
+address {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  width: 200px;
+  font-size: 64px;
 }
 
 div {
@@ -19,7 +30,8 @@ div {
 
 h2,
 h3,
-h4 {
+h4,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -38,6 +50,7 @@ h4 {
 
 ul {
   font-size: 22px;
+  margin: 16px 24px 0 24px;
 }
 
 p {
@@ -70,13 +83,13 @@ foreignObject {
   pointer-events: bounding-box;
 }
 
-.letter:hover path.tim_0 {
-  d: path("M 0 0 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 m -109 0 h 109 m 0 0 l 109 0 h 110 m -109 0 h 109 m 0 0 l 109 0 m 0 0 h 545 M 1200 0 m 0 0 v 125 m 0 0 v 375 m 0 -375 v 125 m 0 0 v 250 m 0 -250 v 250 m 0 -250 v 125 m 0 0 v 125 M 0 500 m 0 0 h 109 m 0 0 h 218 m -109 0 h 109 m 0 0 l 109 0 h 110 m -110 0 h 110 m 0 0 l 109 0 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 M 0 0 m 0 0 v 125 m 0 0 v 125 m 0 -125 v 375 m 0 -250 v 250 m 0 -250 v 250 m 0 -250 v 250");
-}
-
 .letter:hover foreignObject {
   visibility: visible;
   opacity: 1;
+}
+
+.letter:hover path.tim_0 {
+  d: path("M 0 0 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 m -109 0 h 109 m 0 0 l 109 0 h 110 m -109 0 h 109 m 0 0 l 109 0 m 0 0 h 545 M 1200 0 m 0 0 v 125 m 0 0 v 375 m 0 -375 v 125 m 0 0 v 250 m 0 -250 v 250 m 0 -250 v 125 m 0 0 v 125 M 0 500 m 0 0 h 109 m 0 0 h 218 m -109 0 h 109 m 0 0 l 109 0 h 110 m -110 0 h 110 m 0 0 l 109 0 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 M 0 0 m 0 0 v 125 m 0 0 v 125 m 0 -125 v 375 m 0 -250 v 250 m 0 -250 v 250 m 0 -250 v 250");
 }
 
 .letter:hover path.o_0 {
