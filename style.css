@@ -104,7 +104,7 @@ foreignObject {
 
 /* prevent premature redirection on mobile */
 @keyframes delay-pointer-events {
-  0% {
+  0%, 99% {
     pointer-events: none;
   }
 }
@@ -124,7 +124,7 @@ rect {
 
 /* shape morphs */
 .letter:hover path.tim_0 {
-  d: path("M 0 0 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 m -109 0 h 109 m 0 0 l 109 0 h 110 m -109 0 h 109 m 0 0 l 109 0 m 0 0 h 545 M 1200 0 m 0 0 v 125 m 0 0 v 375 m 0 -375 v 125 m 0 0 v 250 m 0 -250 v 250 m 0 -250 v 125 m 0 0 v 125 M 0 500 m 0 0 h 109 m 0 0 h 218 m -109 0 h 109 m 0 0 l 109 0 h 110 m -110 0 h 110 m 0 0 l 109 0 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 M 0 0 m 0 0 v 125 m 0 0 v 125 m 0 -125 v 375 m 0 -250 v 250 m 0 -250 v 250 m 0 -250 v 250");
+  d: path("M 0 0 l 66 0 h 66 l 67 0 l 67 0 l 67 0 l 67 0 m 0 0 h 25 l 50 0 h 50 l 50 0 h 25 m 0 0 l 139 0 h 461 v 500 h -42 l -82 0 h -42 l -82 0 h -42 l -82 0 h -42 l -82 0 h -42 l -62 0 m 0 0 h -17 l -66 0 h -34 l -66 0 h -17 m 0 0 l -67 0 h -67 l -67 0 h -133 l -66 0 v -125 l 0 -125 v -125 l 0 -125"); 
 }
 
 .letter:hover path.o_0 {
