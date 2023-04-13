@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 
 body {
+  /* styling */
   background-color: #0a0f1e;
   color: white;
+  font-family: 'Rubik', sans-serif;
+  font-size: 32px;
+  /* layout */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,24 +14,33 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: 'Rubik', sans-serif;
-  font-size: 32px;
+}
+
+a {
+  /* style hyperlinks */
+  color: white;
+  text-decoration: none;
+  text-shadow: white 0px 0px 10px;
 }
 
 address {
+  /* styling */
+  font-size: 64px;
+  /* layout */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   height: 500px;
   width: 200px;
-  font-size: 64px;
 }
 
 div {
+  /* layout of content in each letter */
   margin: 16px;
 }
 
+/* control of spacing */
 h2,
 h3,
 h4,
@@ -54,17 +67,13 @@ ul {
 }
 
 p {
-  font-size: min(32px);
+  font-size: 32px;
   text-align: justify;
 }
-
-a {
-  color: white;
-  text-decoration: none;
-  text-shadow: white 0px 0px 10px;
-}
+/* -------------------------------- */
 
 svg path {
+  /* general svg settings */
   fill: none;
   stroke: white;
   transition: 0.8s;
@@ -74,20 +83,24 @@ svg path {
 }
 
 foreignObject {
+  /* general embedded html settings */
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.8s;
 }
 
 .letter {
+  /* better hover detection */
   pointer-events: bounding-box;
 }
 
 .letter:hover foreignObject {
+  /* show embedded html */
   visibility: visible;
   opacity: 1;
 }
 
+/* shape morphs */
 .letter:hover path.tim_0 {
   d: path("M 0 0 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 m -109 0 h 109 m 0 0 l 109 0 h 110 m -109 0 h 109 m 0 0 l 109 0 m 0 0 h 545 M 1200 0 m 0 0 v 125 m 0 0 v 375 m 0 -375 v 125 m 0 0 v 250 m 0 -250 v 250 m 0 -250 v 125 m 0 0 v 125 M 0 500 m 0 0 h 109 m 0 0 h 218 m -109 0 h 109 m 0 0 l 109 0 h 110 m -110 0 h 110 m 0 0 l 109 0 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 m 0 0 h 109 M 0 0 m 0 0 v 125 m 0 0 v 125 m 0 -125 v 375 m 0 -250 v 250 m 0 -250 v 250 m 0 -250 v 250");
 }
@@ -123,8 +136,4 @@ foreignObject {
 .letter:hover path.i_1 {
   d: path("M 2100 500 h 200 v 125 m -200 125 l 0 -125 v -125 m 200 125 l 0 125 v 250 h -200 v -250");
 }
-
-rect {
-  fill: none;
-  stroke: red;
-}
+/* -------------------------------- */
