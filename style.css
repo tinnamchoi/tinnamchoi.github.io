@@ -110,7 +110,7 @@ foreignObject {
 }
 
 .letter:hover a {
-  animation: delay-pointer-events 1ms linear;
+  animation: delay-pointer-events 100ms linear;
   pointer-events: auto;
 }
 /* -------------------------------- */
