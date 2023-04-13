@@ -21,6 +21,8 @@ a {
   color: white;
   text-decoration: none;
   text-shadow: white 0px 0px 10px;
+  pointer-events: none;
+  transition: 0s pointer-events;
 }
 
 address {
@@ -72,6 +74,11 @@ p {
 }
 /* -------------------------------- */
 
+svg {
+  width: 100vw;
+  height: 100vh;
+}
+
 svg path {
   /* general svg settings */
   fill: none;
@@ -99,6 +106,19 @@ foreignObject {
   visibility: visible;
   opacity: 1;
 }
+
+/* prevent premature redirection on mobile */
+@keyframes delay-pointer-events {
+  0% {
+    pointer-events: none;
+  }
+}
+
+.letter:hover a {
+  animation: delay-pointer-events 1ms linear;
+  pointer-events: auto;
+}
+/* -------------------------------- */
 
 /* shape morphs */
 .letter:hover path.tim_0 {
