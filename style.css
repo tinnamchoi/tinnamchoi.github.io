@@ -104,7 +104,7 @@ foreignObject {
 
 /* prevent premature redirection on mobile */
 @keyframes delay-pointer-events {
-  0% {
+  0%, 99% {
     pointer-events: none;
   }
 }
