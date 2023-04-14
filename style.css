@@ -139,31 +139,35 @@ rect {
   d: path("M 1725 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
 }
 
-.letter:hover path.h_0 {
+#h_0:hover path {
   d: path("M 2000 0 h 125 m 275 0 v 125 m -275 -125 h 275 m 0 125 v 375 h -125 l -150 0 m 150 0 h -150 m 150 0 l -150 0 h -125 v -500");
 }
 
-.letter:hover path.y_0 {
+#y_0:hover path {
   d: path("M 2400 100 h 80 l 80 0 h 80 l 80 0 h 80 v 500 h -400 v -100 l 0 -100 v -100 l 0 -100 v -100");
 }
 
-.letter:hover path.c_0 {
+#c_0:hover path {
   d: path("M 900 600 h 400 v 80 l 0 80 v 80 l 0 80 v 80 h -400 v -400");
 }
 
-.letter:hover path.h_1 {
+#h_1:hover path {
   d: path("M 1300 500 h 125 m 275 0 v 125 m -275 -125 h 275 m 0 125 v 375 h -125 l -150 0 m 150 0 h -150 m 150 0 l -150 0 h -125 v -500");
 }
 
-.letter:hover path.o_1 {
+#o_1:hover path {
   d: path("M 1700 600 h 400 v 400 h -400 v -400 m 400 0 l 0 400 l -400 0 l 0 -400 l 400 0");
 }
 
-.letter:hover path.i_1 {
+#i_1:hover path {
   d: path("M 2100 500 h 200 v 125 m -200 125 l 0 -125 v -125 m 200 125 l 0 125 v 250 h -200 v -250");
 }
 
 /* -------------------------------- */
+
+g {
+  transition: 0.8s;
+}
 
 @media (orientation: landscape) {
   .about-content {
@@ -175,15 +179,15 @@ rect {
 @media (orientation: portrait) {
   #o_0,
   #t_1,
-  path.h_0,
-  path.y_0 {
+  #h_0,
+  #y_0 {
     transform: translate(-1200px, 500px);
   }
   
-  path.c_0,
-  path.h_1,
-  path.o_1,
-  path.i_1 {
+  #c_0,
+  #h_1,
+  #o_1,
+  #i_1 {
     transform: translate(-700px, 600px);
   }
 }
