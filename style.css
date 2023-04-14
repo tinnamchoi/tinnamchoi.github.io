@@ -72,6 +72,7 @@ p {
   font-size: 32px;
   text-align: justify;
 }
+
 /* -------------------------------- */
 
 svg {
@@ -96,7 +97,7 @@ foreignObject {
   transition: visibility 0s, opacity 0.8s;
 }
 
-.letter:hover foreignObject {
+g:hover foreignObject {
   /* show embedded html */
   visibility: visible;
   opacity: 1;
@@ -104,15 +105,18 @@ foreignObject {
 
 /* prevent premature redirection on mobile */
 @keyframes delay-pointer-events {
-  0%, 99% {
+
+  0%,
+  99% {
     pointer-events: none;
   }
 }
 
-.letter:hover a {
+g:hover a {
   animation: delay-pointer-events 800ms linear;
   pointer-events: auto;
 }
+
 /* -------------------------------- */
 
 rect {
@@ -123,15 +127,15 @@ rect {
 }
 
 /* shape morphs */
-.letter:hover path.tim_0 {
-  d: path("M 0 0 l 66 0 h 66 l 67 0 l 67 0 l 67 0 l 67 0 m 0 0 h 25 l 50 0 h 50 l 50 0 h 25 m 0 0 l 139 0 h 461 v 500 h -42 l -82 0 h -42 l -82 0 h -42 l -82 0 h -42 l -82 0 h -42 l -62 0 m 0 0 h -17 l -66 0 h -34 l -66 0 h -17 m 0 0 l -67 0 h -67 l -67 0 h -133 l -66 0 v -125 l 0 -125 v -125 l 0 -125"); 
+#tim_0:hover path {
+  d: path("M 0 0 l 66 0 h 66 l 67 0 l 67 0 l 67 0 l 67 0 m 0 0 h 25 l 50 0 h 50 l 50 0 h 25 m 0 0 l 139 0 h 461 v 500 h -42 l -82 0 h -42 l -82 0 h -42 l -82 0 h -42 l -82 0 h -42 l -62 0 m 0 0 h -17 l -66 0 h -34 l -66 0 h -17 m 0 0 l -67 0 h -67 l -67 0 h -133 l -66 0 v -125 l 0 -125 v -125 l 0 -125");
 }
 
-.letter:hover path.o_0 {
+#o_0:hover path {
   d: path("M 1200 100 h 400 v 400 h -400 v -400 m 400 0 l 0 400 l -400 0 l 0 -400 l 400 0");
 }
 
-.letter:hover path.t_1 {
+#t_1:hover path {
   d: path("M 1725 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
 }
 
@@ -158,4 +162,28 @@ rect {
 .letter:hover path.i_1 {
   d: path("M 2100 500 h 200 v 125 m -200 125 l 0 -125 v -125 m 200 125 l 0 125 v 250 h -200 v -250");
 }
+
 /* -------------------------------- */
+
+@media (orientation: landscape) {
+  .about-content {
+    width: 1200px;
+    height: 500px;
+  }
+}
+
+@media (orientation: portrait) {
+  #o_0,
+  #t_1,
+  path.h_0,
+  path.y_0 {
+    transform: translate(-1200px, 500px);
+  }
+  
+  path.c_0,
+  path.h_1,
+  path.o_1,
+  path.i_1 {
+    transform: translate(-700px, 600px);
+  }
+}
