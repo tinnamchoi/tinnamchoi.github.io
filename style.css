@@ -7,6 +7,11 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 32px;
   /* layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -160,40 +165,32 @@ g {
   transition: 0.8s;
 }
 
-@media (max-aspect-ratio: 2832/1032) {
+@media (orientation: landscape) {
   svg {
-    position: absolute;
-    top: calc(50vh - 100vw / 2832 * 516);
-    width: 100vw;
-  }
-}
-
-@media (min-aspect-ratio: 2832/1032) {
-  svg {
-    position: absolute;
-    height: 160vh;
-    left: calc(50vw - (100vh / 1032 * 1416))
+    max-height: calc(100vh / 1032 * 2832);
   }
 }
 
 @media (orientation: portrait) {
   svg {
-    position: absolute;
-    top: calc(50vh - 50vw);
-    width: 175vw;
-  }  
-
+    width: 100vw;
+  }
+  
+  #tim_0 {
+    transform: scale(calc(2800 / 1600)) translate(0px, -512.5px);
+  }
+  
   #o_0,
   #t_1,
   #h_0,
   #y_0 {
-    transform: translate(-1200px, 500px);
+    transform: scale(calc(2800 / 1600)) translate(-1200px, -12.5px);
   }
   
   #c_0,
   #h_1,
   #o_1,
   #i_1 {
-    transform: translate(-700px, 600px);
+    transform: scale(calc(2800 / 1600)) translate(-700px, 87.5px);
   }
 }
