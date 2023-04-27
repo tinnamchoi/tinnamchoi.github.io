@@ -109,7 +109,7 @@ g:hover foreignObject {
 }
 
 g:hover a {
-  animation: delay-pointer-events 800ms linear;
+  animation: delay-pointer-events 0.8s linear;
   pointer-events: auto;
 }
 
@@ -132,11 +132,11 @@ rect {
 }
 
 #t_1:hover path {
-  d: path("M 1725 0 h 150 m 125 0 v 125 m -125 -125 h 125 m 0 125 v 125 l 0 125 m 0 -125 v 125 m 0 -125 l 0 125 v 125 h -275 m -125 0 v -250 m 125 250 h -125 m 0 -250 v -125 m 0 -125 h 125 m -125 125 v -125");
+  d: path("M 1725 0 h 150 l 125 0 l 0 125 v 75 l 0 75 v 75 l 0 75 v 75 h -275 l -125 0 v -125 l 0 -125 v -125 l 0 -125 l 125 0");
 }
 
 #h_0:hover path {
-  d: path("M 2000 0 h 125 m 275 0 v 125 m -275 -125 h 275 m 0 125 v 375 h -125 l -150 0 m 150 0 h -150 m 150 0 l -150 0 h -125 v -500");
+  d: path("M 2000 0 h 133 l 134 0 h 133 l 0 125 v 375 h -57 l -114 0 h -58 l -114 0 h -57 v -500");
 }
 
 #y_0:hover path {
@@ -148,7 +148,7 @@ rect {
 }
 
 #h_1:hover path {
-  d: path("M 1300 500 h 125 m 275 0 v 125 m -275 -125 h 275 m 0 125 v 375 h -125 l -150 0 m 150 0 h -150 m 150 0 l -150 0 h -125 v -500");
+  d: path("M 1300 500 h 133 l 134 0 h 133 l 0 125 v 375 h -57 l -114 0 h -58 l -114 0 h -57 v -500");
 }
 
 #o_1:hover path {
