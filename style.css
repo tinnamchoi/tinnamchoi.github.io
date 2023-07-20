@@ -20,7 +20,6 @@ body {
 a {
   /* style hyperlinks */
   color: white;
-  text-decoration: none;
   text-shadow: white 0px 0px 10px;
   pointer-events: none;
   transition: 0s pointer-events;
@@ -193,4 +192,11 @@ g {
   #i_1 {
     transform: scale(calc(2800 / 1600)) translate(-700px, 87.5px);
   }
+}
+
+div.logo {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
 }
