@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100dvh;
+  height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -166,7 +166,8 @@ g {
 
 @media (orientation: landscape) {
   svg {
-    max-height: calc(100dvh / 1032 * 2832);
+    min-width: 100vw;
+    max-height: calc(100vh / 1032 * 2832);
   }
 }
 
