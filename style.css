@@ -13,9 +13,6 @@ body {
 }
 
 a {
-  /* style hyperlinks */
-  color: white;
-  text-shadow: white 0px 0px 10px;
   pointer-events: none;
   transition: 0s pointer-events;
 }

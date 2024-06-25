@@ -5,3 +5,9 @@ body {
   color: white;
   font-family: 'Rubik', sans-serif;
 }
+
+a {
+  /* style hyperlinks */
+  color: white;
+  text-shadow: white 0px 0px 10px;
+}
